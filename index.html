@@ -3,19 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UMANE</title>
+
+<title>UMANE | Em breve</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{height:100vh;display:flex;justify-content:center;align-items:center;background:#f7f5f2;font-family:Arial,sans-serif;color:#444;text-align:center}
-.container{max-width:700px;padding:40px}
-h1{font-size:42px;letter-spacing:3px;margin-bottom:20px}
-p{font-size:22px;line-height:1.6}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#F0EEE9;
+    color:#111C4E;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+}
+
+/* Fundo */
+
+body::before{
+    content:'';
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:#68A2B9;
+    opacity:.08;
+    border-radius:50%;
+    top:-250px;
+    left:-250px;
+    filter:blur(80px);
+}
+
+body::after{
+    content:'';
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#C6B784;
+    opacity:.10;
+    border-radius:50%;
+    bottom:-220px;
+    right:-220px;
+    filter:blur(80px);
+}
+
+.container{
+
+    width:90%;
+    max-width:850px;
+    text-align:center;
+    z-index:2;
+
+    animation:fade 1.2s ease;
+
+}
+
+.logo{
+
+    font-size:78px;
+    font-weight:700;
+    letter-spacing:-4px;
+    margin-bottom:10px;
+
+}
+
+.sublogo{
+
+    color:#68A2B9;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:14px;
+    margin-bottom:70px;
+
+}
+
+h1{
+
+    font-size:68px;
+    font-weight:300;
+    margin-bottom:30px;
+
+}
+
+p{
+
+    font-size:24px;
+    line-height:1.8;
+    color:#495057;
+    margin-bottom:25px;
+
+}
+
+strong{
+
+    color:#111C4E;
+
+}
+
+hr{
+
+    width:120px;
+    margin:45px auto;
+    border:none;
+    border-top:1px solid #C6B784;
+
+}
+
+.footer{
+
+    color:#C6B784;
+    font-size:16px;
+    letter-spacing:2px;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+font-size:52px;
+
+}
+
+h1{
+
+font-size:42px;
+
+}
+
+p{
+
+font-size:19px;
+
+}
+
+}
+
 </style>
+
 </head>
+
 <body>
+
 <div class="container">
-<h1>UMANE</h1>
-<p>Em breve a UMANE estará no ar com soluções para estruturar e fortalecer a Gestão de Pessoas.</p>
+
+<div class="logo">
+
+umane
+
 </div>
+
+<div class="sublogo">
+
+PESSOAS E PERFORMANCE
+
+</div>
+
+<h1>
+
+Em breve.
+
+</h1>
+
+<p>
+
+Estamos preparando uma nova experiência para empresas que acreditam que pessoas são o seu maior ativo.
+
+</p>
+
+<p>
+
+A <strong>UMANE</strong> estará no ar com soluções para estruturar e fortalecer a Gestão de Pessoas.
+
+</p>
+
+<hr>
+
+<div class="footer">
+
+contato@umanerh.com.br
+
+</div>
+
+</div>
+
 </body>
 </html>
